@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return f"Csumi, version: {os.getenv('APP_VERSION', 'dev')}\n"
+    return f"Szevasz, version: {os.getenv('APP_VERSION', 'dev')}\n"
 
 @app.route("/healthz")
 def healthz():
