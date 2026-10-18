@@ -21,12 +21,12 @@ spec:
         runAsNonRoot: true
       containers:
         - name: flask-app
-          image: ghcr.io/vlaszlo92/k8s-pipeline-gyakorlat:e7e7d7edcd98da827bfa4b28ff7dd2b8add0ce0f
+          image: ghcr.io/vlaszlo92/k8s-pipeline-gyakorlat:1f59a408fcf8bce135fc3bf11de53d0b10107339
           ports:
             - containerPort: 8000
           env:
             - name: APP_VERSION
-              value: "k8s-dev"
+              value: "v2"
           readinessProbe:
             httpGet:
               path: /healthz
